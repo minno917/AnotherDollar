@@ -8,4 +8,4 @@ It is intended for the chronic clock watcher.
 * Modifies the above two values based on hours working that day
 
 ## Plans:
-    I am open to new ideas and features. Please feel free to contact me if you think of a feature that would be useful or UI improvements.
+I am open to new ideas and features. Please feel free to contact me if you think of a feature that would be useful or UI improvements.
