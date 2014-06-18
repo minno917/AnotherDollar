@@ -1,0 +1,11 @@
+c:\users\iminno.altavian\documents\visual studio 2010\Projects\AnotherDollar\AnotherDollar\obj\x86\Debug\View.baml
+c:\users\iminno.altavian\documents\visual studio 2010\Projects\AnotherDollar\AnotherDollar\obj\x86\Debug\App.g.cs
+c:\users\iminno.altavian\documents\visual studio 2010\Projects\AnotherDollar\AnotherDollar\obj\x86\Debug\View.g.cs
+c:\users\iminno.altavian\documents\visual studio 2010\Projects\AnotherDollar\AnotherDollar\obj\x86\Debug\AnotherDollar_MarkupCompile.cache
+c:\users\iminno.altavian\documents\visual studio 2010\Projects\AnotherDollar\AnotherDollar\obj\x86\Debug\AnotherDollar.g.resources
+c:\users\iminno.altavian\documents\visual studio 2010\Projects\AnotherDollar\AnotherDollar\obj\x86\Debug\MPP.AnotherDollar.Properties.Resources.resources
+c:\users\iminno.altavian\documents\visual studio 2010\Projects\AnotherDollar\AnotherDollar\obj\x86\Debug\AnotherDollar.csproj.GenerateResource.Cache
+c:\users\iminno.altavian\documents\visual studio 2010\Projects\AnotherDollar\AnotherDollar\bin\Debug\AnotherDollar.exe
+c:\users\iminno.altavian\documents\visual studio 2010\Projects\AnotherDollar\AnotherDollar\bin\Debug\AnotherDollar.pdb
+c:\users\iminno.altavian\documents\visual studio 2010\Projects\AnotherDollar\AnotherDollar\obj\x86\Debug\AnotherDollar.exe
+c:\users\iminno.altavian\documents\visual studio 2010\Projects\AnotherDollar\AnotherDollar\obj\x86\Debug\AnotherDollar.pdb
