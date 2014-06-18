@@ -9,3 +9,5 @@ c:\users\iminno.altavian\documents\visual studio 2010\Projects\AnotherDollar\Ano
 c:\users\iminno.altavian\documents\visual studio 2010\Projects\AnotherDollar\AnotherDollar\bin\Debug\AnotherDollar.pdb
 c:\users\iminno.altavian\documents\visual studio 2010\Projects\AnotherDollar\AnotherDollar\obj\x86\Debug\AnotherDollar.exe
 c:\users\iminno.altavian\documents\visual studio 2010\Projects\AnotherDollar\AnotherDollar\obj\x86\Debug\AnotherDollar.pdb
+C:\Users\iminno.ALTAVIAN\Documents\Visual Studio 2010\Projects\AnotherDollar\AnotherDollar\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\iminno.ALTAVIAN\Documents\Visual Studio 2010\Projects\AnotherDollar\AnotherDollar\obj\x86\Debug\AnotherDollar_MarkupCompile.lref

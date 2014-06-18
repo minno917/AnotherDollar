@@ -54,6 +54,8 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DateTimeConverter.cs" />
+    <Compile Include="Model.cs" />
     <Compile Include="View.xaml.cs">
       <DependentUpon>View.xaml</DependentUpon>
     </Compile>
