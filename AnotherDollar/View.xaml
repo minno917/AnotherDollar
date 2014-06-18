@@ -2,15 +2,30 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:AD="clr-namespace:MPP.AnotherDollar"
-        Title="Another Day, Another Dollar" Height="119" Width="266" Closing="Window_Closing" Name="MainView">
+        Title="Another Day, Another Dollar" Height="150" Width="285" Closing="Window_Closing" Name="MainView">
     <Window.Resources>
         <AD:DateTimeConverter x:Key="MyDateTimeConverter" />
     </Window.Resources>
-    <StackPanel>
-        <StackPanel Orientation="Horizontal" Margin="50,0" >
+    <StackPanel Orientation="Horizontal">
+        <StackPanel Width="120">
+            <Label Height="28" Content="Today's Earnings:"/>
+            <Label Height="28" Content="{Binding Path=TodaysEarnings}"/>
+            <Label Height="28" Content="Day Completed:"/>
+            <Label Height="28"  Content="{Binding Path=PercentString}"/>
+        </StackPanel>
+        <StackPanel>
+        <StackPanel Orientation="Horizontal" >
             <Label Content="Day's End" Height="28" HorizontalAlignment="Stretch"  VerticalAlignment="Center"/>
-            <TextBox Height="23" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80" Text="{Binding Path=EndTime, Converter={StaticResource MyDateTimeConverter}, Mode=TwoWay}" KeyDown="TextBox_KeyDown" Name="TextBox_DaysEnd" />
-        </StackPanel>        
-        <Label Margin="20" Content="{Binding Path=PercentString}" Height="28" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBox Height="28" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80" Text="{Binding Path=EndTime, Converter={StaticResource MyDateTimeConverter}, Mode=TwoWay}" KeyDown="RemoveFocusFromTextbox" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Height="28">
+            <Label Content="Wage" Margin="0,0,20,0" Height="28"/>
+            <TextBox Height="28" Width="80" Text="{Binding Path=Wage, Mode=TwoWay}" KeyDown="RemoveFocusFromTextbox"/>
+        </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="28">
+                <Label Content="Hours" Margin="0,0,20,0" Height="28"/>
+                <TextBox Height="28" Width="80" Text="{Binding Path=HoursWorking, Mode=TwoWay}" KeyDown="RemoveFocusFromTextbox"/>
+            </StackPanel>
+        </StackPanel>
     </StackPanel>
 </Window>

@@ -28,6 +28,7 @@ namespace MPP.AnotherDollar
             }
             set
             {
+                hoursWorking = value;
                 OnPropertyChanged("PercentString");
                 OnPropertyChanged("TodaysEarnings");
             }
@@ -46,12 +47,12 @@ namespace MPP.AnotherDollar
                 OnPropertyChanged("TodaysEarnings");
             }
         }
-
-        public double TodaysEarnings
+        
+        public string TodaysEarnings
         {
             get
             {
-                return percent * wage * hoursWorking;
+                return string.Format("{0:C}", (percent > 0) ? percent * wage * hoursWorking : 0);
             }
         }
 
@@ -64,7 +65,8 @@ namespace MPP.AnotherDollar
             set
             {
                 endTime = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day, value.Hour, value.Minute, 0);
-                OnPropertyChanged("EndTime");
+                UpdatePercent();
+                OnPropertyChanged("EndTime");                
             }
         }
 
@@ -72,7 +74,7 @@ namespace MPP.AnotherDollar
         {
             get
             {
-                return string.Format("Day Complete: {0:P}", percent);
+                return string.Format("{0:P}", percent);
             }
         }
 
@@ -92,15 +94,15 @@ namespace MPP.AnotherDollar
 
         public Model()
         {
-            Percent = 1 - (endTime - DateTime.Now).TotalSeconds / (TimeSpan.FromHours(hoursWorking).TotalSeconds);
+            UpdatePercent();   
             updateTimer = new Timer(timerPeriod);
-            updateTimer.Elapsed += new ElapsedEventHandler(UpdateTimeRemaining);
+            updateTimer.Elapsed += new ElapsedEventHandler(Refresh);
             updateTimer.Start();
         }
 
-        private void UpdateTimeRemaining(object sender, ElapsedEventArgs e)
+        private void Refresh(object sender, ElapsedEventArgs e)
         {
-            Percent = 1 - (endTime - DateTime.Now).TotalSeconds / (TimeSpan.FromHours(hoursWorking).TotalSeconds);
+            UpdatePercent();
         }
 
         public void Dispose()
@@ -113,6 +115,11 @@ namespace MPP.AnotherDollar
         {
             if (PropertyChanged != null)
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        private void UpdatePercent()
+        {
+            Percent = 1 - (endTime - DateTime.Now).TotalSeconds / (TimeSpan.FromHours(hoursWorking).TotalSeconds);
         }
     }
 }
