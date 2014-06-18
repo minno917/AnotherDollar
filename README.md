@@ -1,8 +1,6 @@
-AnotherDollar
-=============
-
 # Another Day, Another Dollar
-### This application simply keeps track of how much of the work day is left. It is intended for the chronic clock watcher.
+### This application simply keeps track of how much of the work day is left.
+It is intended for the chronic clock watcher.
 
 ## FEATURES:
 * Keeps track of money earned (based on entered wage)
